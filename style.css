@@ -7,66 +7,30 @@ body {
 }
 
 header {
-    background-color: #ffffff;
-    border-bottom: 1px solid #333333;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White font color */
+    position: relative;
+    z-index: 10;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: right; /* Align the menu to the right */
 }
 
 nav li {
     display: inline;
-    margin-right: 20px;
+    margin-left: 20px; /* Adjust margin to create space between menu items */
 }
 
-.content-block {
-    padding: 20px;
-    border-bottom: 1px solid #333333;
-}
-
-h1, h2 {
-    font-size: 20px;
-}
-
-p {
-    font-size: 12px;
-}
-
-.rounded {
-    border-radius: 5px;
-}
-
-.hidden {
-    display: none;
-}
-
-.cv-button {
-    display: inline-block;
-    background-color: #333333;
-    color: #ffffff;
-    padding: 10px 20px;
+/* Add hover effect for menu items */
+nav a {
     text-decoration: none;
-    border-radius: 5px;
-}
-
-#show-more-button {
-    background-color: #333333;
     color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
+    transition: color 0.3s;
 }
 
-#hobbies-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-
-.hobby img {
-    width: 100%;
-    height: auto;
+nav a:hover {
+    color: #cccccc; /* Change font color on hover */
 }
