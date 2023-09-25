@@ -1,3 +1,4 @@
+* {box-sizing: border-box;}
 body {
     background-color: #ffffff;
     font-family: 'Proxima Nova', sans-serif;
@@ -5,21 +6,14 @@ body {
     margin: 0;
     padding: 0;
 }
-
-* {box-sizing: border-box;}
-
-body { 
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: #FFEB3B;
+  background-color: #000000;
   padding: 20px 10px;
+font-color: #ffffff;
 }
 
 .wrap-logo {
@@ -29,26 +23,87 @@ header {
 }
 
 header a {
-  color: #000;
+  color: #333333;
   padding: 12px;
   text-decoration: none;
   font-size: 18px; 
   border-radius: 4px;
-  font-color: ffffff;
 }
 
 header a.logo {
   font-size: 25px;
   font-weight: bold;
-font-color: ffffff;
 }
 
 header a:hover {
-  background-color: #FBC02D;
-  color: #212121;
+  background-color: #333333;
+  color: #000000;
 }
 
 header a.active {
-  background-color: #FBC02D;
+  background-color: #333333;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.content-block {
+    padding: 20px;
+    border-bottom: 1px solid #333333;
+}
+
+h1, h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.cv-button {
+    display: inline-block;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#show-more-button {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.hobby img {
+    width: 100%;
+    height: auto;
+}
